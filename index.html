@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-  <title>Starter Template - Materialize</title>
+  <title>S.S.N Enterprises</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -37,64 +37,209 @@
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <h1 class="header center orange-text">Starter Template</h1>
+      <h1 class="header center pink-text text-accent-2">S.S.N Enterprises</h1>
       <div class="row center">
-        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        <h5 class="header col s12 light"> Choose us as your stationery partner</h5>
       </div>
       <div class="row center">
-        <a href="http://materializecss.com/getting-started.html" id="download-button"
-          class="btn-large waves-effect waves-light orange">Get Started</a>
+        <a href="#modal1" id="download-button"
+          class="btn-large waves-effect waves-light pink accent-2 modal-trigger">Contact Us</a>
       </div>
       <br><br>
+      <div id="modal1" class="modal bottom-sheet">
+        <div class="modal-content">
+          <h5 class="pink-text text-accent-2">Contact Us</h5>
+          <form class="col s12" method="POST" action="mail.php">
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="name" name="name" type="text" class="validate">
+                <span class="helper-text" data-error="Please enter your name"></span>
+                <label for="name">Name</label>
+              </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix">email</i>
+                <input id="email" name="email" type="email" class="validate">
+                <label for="email">Email</label>
+                <span class="helper-text" data-error="Please enter your email address"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">mode_edit</i>
+                <textarea class="materialize-textarea validate" id="queries" name="queries"></textarea>
+                <label for="queries">Queries</label>
+                <span class="helper-text" data-error="Please add your queries"></span>
+              </div>
+              <div class="modal-footer">
+                <a class="btn-small waves-effect waves-light pink accent-2" id="submit" name="submit" type="submit"
+                  value="Submit">Submit</a>
+                <a href="/" class="modal-close waves-effect waves-light red lighten-1 btn-small">Cancel</a>
+              </div>
+            </div>
 
+          </form>
+        </div>
+
+      </div>
     </div>
   </div>
 
 
   <div class="container">
     <div class="section">
-
       <!--   Icon Section   -->
       <div class="row">
+
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
+            <h2 class="center light-blue-text"><i class="material-icons">insert_drive_file</i></h2>
+            <h5 class="center">Zap Paper - Laser printing paper</h5>
 
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our
-              custom components. Additionally, we refined animations and transitions to provide a smoother experience
-              for developers.</p>
+            <p class="light">ZAP is a high-quality and reliable copy paper for everyday use. PCC pigment technology
+              improves smoothness, thickness and opacity while reducing wood-fiber usage.</p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
+            <h2 class="center light-blue-text"><i class="material-icons">note_add</i></h2>
+            <h5 class="center">IK copier paper</h5>
 
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework
-              that incorporates components and animations that provide more feedback to users. Additionally, a single
-              underlying responsive system across all platforms allow for a more unified user experience.</p>
+            <p class="light">Ik copy paper is designed to lend an exquisite touch to your most important documents.
+              It is created with enhanced grammage, unparalleled smoothness, improved thickness and superior opacity to
+              communicate the high level of prestige and importance you wish to present every time. Highly recommended
+              for design work, customer proposal and school projects.
+            </p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
+            <h2 class="center light-blue-text"><i class="material-icons">search</i></h2>
+            <h5 class="center">Other stationery Items</h5>
 
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users
-              get started. We are also always open to feedback and can answer any questions a user may have about
-              Materialize.</p>
+            <p class="light">We provide all kind of stationer items. Like Stapler, Eraser
+              Push-pin, Drawing pin (U.K)/ Thumbtack (U.S), Paper clip, Rubber stamp, Highlighter, Fountain pen, etc.
+              <a>Click here </a>to find the complete list.
+            </p>
           </div>
         </div>
       </div>
 
     </div>
     <br><br>
+    <section>
+      <div class="carousel carousel-slider" data-indicators="true">
+        <div class="carousel-fixed-item center middle-indicator">
+          <div class="left">
+            <a class="movePrevCarousel waves-effect waves-light content-indicator text-light-blue light-blue lighten-5"><i
+                class="material-icons left  middle-indicator-text">chevron_left</i></a>
+          </div>
+
+          <div class="right">
+            <a
+              class=" moveNextCarousel  waves-effect waves-light content-indicator text-light-blue light-blue lighten-5"><i
+                class="material-icons right middle-indicator-text">chevron_right</i></a>
+          </div>
+        </div>
+        <a class="carousel-item black-text" href="#one">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/zap-paper/B1140547141.jpg">
+            </div>
+            <div class="card-content">
+              <h6>Card 5</h6>
+              <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+            </div>
+          </div>
+        </a>
+        <a class="carousel-item black-text" href="#two">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/zap-paper/images.jpg">
+            </div>
+            <div class="card-content">
+              <h6>Card 5</h6>
+              <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+            </div>
+          </div>
+        </a>
+        <a class="carousel-item black-text" href="#three">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/zap-paper/U2cc41fa23cea4ac684d67ba9a3792d336.jpg">
+            </div>
+            <div class="card-content">
+              <h6>Card 5</h6>
+              <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+            </div>
+          </div>
+        </a>
+
+        <a class="carousel-item black-text" href="#four">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/zap-paper/zap-70-gsm-a4-copy-paper-11-69-inch-x-8-26-inch-1541409064-4433370.png">
+            </div>
+            <div class="card-content">
+              <h6>Card 5</h6>
+              <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+            </div>
+          </div>
+        </a>
+
+        <a class="carousel-item black-text" href="#five">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/zap-paper/zap-a4-copier-paper-500x500.jpg">
+            </div>
+            <div class="card-content">
+              <h6>Card 5</h6>
+              <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+            </div>
+          </div>
+        </a>
+        <a class="carousel-item black-text" href="#six">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/zap-paper/zap-a4-size-xerox-paper2-500x500.jpg">
+            </div>
+            <div class="card-content">
+              <h6>Card 5</h6>
+              <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+            </div>
+          </div>
+        </a>
+        <a class="carousel-item black-text" href="#seven">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/zap-paper/zap-hero.png">
+            </div>
+            <div class="card-content">
+              <h6>Card 5</h6>
+              <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+            </div>
+          </div>
+        </a>
+
+
+
+
+      </div>
+    </section>
+    <br><br>
   </div>
 
-  <footer class="page-footer orange">
+
+  <footer class="page-footer pink accent-2">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
@@ -127,7 +272,7 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-        Made by <a class="orange-text text-lighten-3">MD</a>
+        Made by <a class="pink-text text-lighten-3">MD</a>
       </div>
     </div>
   </footer>
@@ -137,6 +282,31 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.carousel.carousel-slider').carousel({
+        fullWidth: true,
+        numVisible: 2,
+        indicators: false,
+        padding: 60
+      });
+      $('.modal').modal();
+    });
+    // move next carousel
+    $('.moveNextCarousel').click(function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      $('.carousel').carousel('next');
+    });
+
+    // move prev carousel
+    $('.movePrevCarousel').click(function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      $('.carousel').carousel('prev');
+    });
+  </script>
+
 
 </body>
 
