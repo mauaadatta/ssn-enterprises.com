@@ -1,13 +1,14 @@
 $(document).ready(function () {
     $('.carousel.carousel-slider').carousel({
         fullWidth: true,
-        numVisible: 2,
+        numVisible: 3,
         indicators: false,
         padding: 60
     });
     $('.modal').modal();
     $('.sidenav').sidenav();
     $('.collapsible').collapsible();
+    $('.parallax').parallax();
 });
 // move next carousel
 $('.moveNextCarousel').click(function (e) {
