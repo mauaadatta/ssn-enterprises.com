@@ -22,66 +22,90 @@
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo">
         <span class="leckerli-one">S.S.N</span>
-        <span class="leckerli-one" style="font-size: small;"> Your Stationery Partner</span>
+        <span class="leckerli-one hide-on-small-only" style="font-size: small;"> Your Stationery Partner</span>
       </a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#"><i class="material-icons">menu</i></a></li>
+        <li> <a href="#" data-target="slide-out" class="sidenav-trigger show-on-medium-and-up"><i
+              class="material-icons">menu</i></a></li>
       </ul>
+      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
+  <ul id="slide-out" class="sidenav collapsible">
+    <li>
+      <div class="user-view">
+        <div class="background">
+          <img src="images/SSN1.jpeg" style="width: 100%;">
+        </div>
+        <a id="close-nav" class=" cursor-pointer sidenav-close"><i
+            class="material-icons blue-text right small">cancel</i></a>
+      </div>
+    </li>
+    <div class=" profile-details">
+      <h5> Mr. Shivram.R.Naik</h5>
+      <h6>Mobile No.: +91-9322285919</h6>
+      <p>Address: E-403<br> Grand Manor Ideal Park <br>Mira Road East - 401107</p>
+    </div>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li><a class="blue-text" href="/">Home</a></li>
+    <li>
+      <a class="blue-text collapsible-header">Our Products</a>
+      <div class="collapsible-body">
+        <ul>
+          <li><a class="waves-effect">Ball Pens & Gel Pens </a></li>
+          <li><a class="waves-effect">Rolls & Accounting Supplies </a></li>
+          <li><a class="waves-effect">Markers & Highlighters </a></li>
+          <li><a class="waves-effect">Erasers, Pencils, Sharpeners & Scales </a></li>
+          <li><a class="waves-effect">Mech. Pencils and Leads </a></li>
+          <li><a class="waves-effect">Refills & Inks </a></li>
+          <li><a class="waves-effect">Copier </a></li>
+          <li><a class="waves-effect">Writing Pads </a></li>
+          <li><a class="waves-effect">Sprial Pads </a></li>
+          <li><a class="waves-effect">Notebooks </a></li>
+          <li><a class="waves-effect">Computer Paper,Rolls & Speciality </a></li>
+          <li><a class="waves-effect">Ring Binders & CD Zippers </a></li>
+          <li><a class="waves-effect">Envelopes & Telephone Indexs </a></li>
+          <li><a class="waves-effect">Conference Files & Documents </a></li>
+          <li><a class="waves-effect">Folders & Documents Bags </a></li>
+          <li><a class="waves-effect">Expansion Case & Papers Separators </a></li>
+          <li><a class="waves-effect">Display Books Liver Arch Files & Card Holder </a></li>
+          <li><a class="waves-effect">Tapes & Tapes Dispensers </a></li>
+          <li><a class="waves-effect">Message Pad Adhesives </a></li>
+          <li><a class="waves-effect">Staplers </a></li>
+          <li><a class="waves-effect">Stapler Pins & Punches </a></li>
+          <li><a class="waves-effect">Binder Clips & Pins </a></li>
+          <li><a class="waves-effect">Pin Dispensers & Trays </a></li>
+          <li><a class="waves-effect">Table Top Accessories </a></li>
+          <li><a class="waves-effect">Writing & Display Boards </a></li>
+        </ul>
+      </div>
+    </li>
+    <li><a class="blue-text" href="/about.html">About Us</a></li>
+    <li><a class="blue-text" href="/contactus.html">Contact Us</a></li>
+
+
+    <li><a class="blue-text">Terms of Services</a></li>
+  </ul>
+
+
+
+
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <h1 class="header center pink-text text-accent-2">S.S.N Enterprises</h1>
+      <h1 class="header center teal-text">S.S.N Enterprises</h1>
       <div class="row center">
         <h5 class="header col s12 light"> Choose us as your stationery partner</h5>
       </div>
       <div class="row center">
-        <a href="#modal1" id="download-button"
-          class="btn-large waves-effect waves-light pink accent-2 modal-trigger">Contact Us</a>
+        <a href="/contactus.html" id="contact-button"
+          class="btn-large waves-effect waves-light teal modal-trigger">Contact
+          Us</a>
       </div>
       <br><br>
-      <div id="modal1" class="modal bottom-sheet">
-        <div class="modal-content">
-          <h5 class="pink-text text-accent-2">Contact Us</h5>
-          <form class="col s12" method="POST" action="mail.php">
-            <div class="row">
-              <div class="input-field col s6">
-                <i class="material-icons prefix">account_circle</i>
-                <input id="name" name="name" type="text" class="validate">
-                <span class="helper-text" data-error="Please enter your name"></span>
-                <label for="name">Name</label>
-              </div>
-              <div class="input-field col s6">
-                <i class="material-icons prefix">email</i>
-                <input id="email" name="email" type="email" class="validate">
-                <label for="email">Email</label>
-                <span class="helper-text" data-error="Please enter your email address"></span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="input-field col s12">
-                <i class="material-icons prefix">mode_edit</i>
-                <textarea class="materialize-textarea validate" id="queries" name="queries"></textarea>
-                <label for="queries">Queries</label>
-                <span class="helper-text" data-error="Please add your queries"></span>
-              </div>
-              <div class="modal-footer">
-                <a class="btn-small waves-effect waves-light pink accent-2" id="submit" name="submit" type="submit"
-                  value="Submit">Submit</a>
-                <a href="/" class="modal-close waves-effect waves-light red lighten-1 btn-small">Cancel</a>
-              </div>
-            </div>
-
-          </form>
-        </div>
-
-      </div>
     </div>
   </div>
 
@@ -94,7 +118,7 @@
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center light-blue-text"><i class="material-icons">insert_drive_file</i></h2>
-            <h5 class="center">Zap Paper - Laser printing paper</h5>
+            <h5 class="center">Zap</h5>
 
             <p class="light">ZAP is a high-quality and reliable copy paper for everyday use. PCC pigment technology
               improves smoothness, thickness and opacity while reducing wood-fiber usage.</p>
@@ -104,7 +128,7 @@
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center light-blue-text"><i class="material-icons">note_add</i></h2>
-            <h5 class="center">IK copier paper</h5>
+            <h5 class="center">IK</h5>
 
             <p class="light">Ik copy paper is designed to lend an exquisite touch to your most important documents.
               It is created with enhanced grammage, unparalleled smoothness, improved thickness and superior opacity to
@@ -121,7 +145,7 @@
 
             <p class="light">We provide all kind of stationer items. Like Stapler, Eraser
               Push-pin, Drawing pin (U.K)/ Thumbtack (U.S), Paper clip, Rubber stamp, Highlighter, Fountain pen, etc.
-              <a>Click here </a>to find the complete list.
+              <a class="teal-text cursor-pointer">Click here </a>to find the complete list.
             </p>
           </div>
         </div>
@@ -239,40 +263,59 @@
   </div>
 
 
-  <footer class="page-footer pink accent-2">
+  <footer class="page-footer teal">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">SSN Enterprises</h5>
-          <p class="grey-text text-lighten-4">Are you worried about your office stationery? Leave it on us. <br>
-            We will manage it for you, so that you can focus on your business.
-          </p>
+        <div class="col l3 s12">
+          <h5 class="white-text">Useful Links</h5>
+          <ul>
+            <li><a class="white-text" href="/">Home</a></li>
+            <li><a class="white-text" href="/about.html">About Us</a></li>
+            <li><a class="white-text" href="/contactus.html">Contact Us</a></li>
+            <li><a class=" white-text" href="#!">Terms of Services</a></li>
+          </ul>
 
 
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Our Stationery Items</h5>
+          <h5 class="white-text">Product Categories</h5>
           <ul>
-            <li><a class="white-text" href="#!">Paper</a></li>
-            <li><a class="white-text" href="#!">Pen</a></li>
-            <li><a class="white-text" href="#!">Computer</a></li>
-            <li><a class="white-text" href="#!">Accessories</a></li>
+            <li><a class="white-text" href="">Erasers, Pencils, Sharpners & Scales
+              </a></li>
+            <li><a class="white-text" href="">Writing pads</a></li>
+            <li><a class="white-text" href="">Refills & Inks</a></li>
+            <li><a class="white-text" href="">
+                Computer Paper,Rolls & Speciality</a></li>
+            <li><a class="white-text" href="">
+                Spiral Pads</a></li>
           </ul>
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Contact Us</h5>
+          <h5 class="white-text visibility-hidden">Product Categories</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="">Display Books Liver Arch Files</a></li>
+            <li><a class="white-text" href="">Ring Binders & CD Zippers</a></li>
+            <li><a class="white-text" href="">Pin Dispensers & Trays</a></li>
+            <li><a class="white-text" href="">Ball Pens & Gel Pens</a></li>
+            <li><a class="white-text" href="">Markers & Highlighters</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text visibility-hidden "> Product Categories</h5>
+          <ul>
+            <li><a class="white-text" href="">Mech. Pencils and Leads
+              </a></li>
+            <li><a class="white-text" href="">Table Top Accessories</a></li>
+            <li><a class="white-text" href="">Writing & Display Boards</a></li>
+            <li><a class="white-text" href="">Stapler Pins & Punches</a></li>
+            <li><a class="white-text" href="">Notebooks</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-        Made by <a class="pink-text text-lighten-3">MD</a>
+        Made by <a class="white-text">MD</a>
       </div>
     </div>
   </footer>
@@ -282,30 +325,7 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('.carousel.carousel-slider').carousel({
-        fullWidth: true,
-        numVisible: 2,
-        indicators: false,
-        padding: 60
-      });
-      $('.modal').modal();
-    });
-    // move next carousel
-    $('.moveNextCarousel').click(function (e) {
-      e.preventDefault();
-      e.stopPropagation();
-      $('.carousel').carousel('next');
-    });
-
-    // move prev carousel
-    $('.movePrevCarousel').click(function (e) {
-      e.preventDefault();
-      e.stopPropagation();
-      $('.carousel').carousel('prev');
-    });
-  </script>
+  <script src="js/main.js"></script>
 
 
 </body>
