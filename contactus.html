@@ -108,11 +108,11 @@
                     </blockquote>
                     <div class="divider"></div>
                     <h6>Do you wish to contact us?</h6>
-                    <form class="col s12" method="POST" action="mail.php">
+                    <form class="col s12">
                         <div class="row">
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">account_circle</i>
-                                <input id="name" name="name" type="text" class="validate">
+                                <input id="name" name="name" type="text" class="validate" required>
                                 <span class="helper-text" data-error="Please enter your name"></span>
                                 <label for="name">Name</label>
                             </div>
@@ -127,6 +127,14 @@
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
+                                <i class="material-icons prefix">phone</i>
+                                <input id="phone" name="phone" type="text" class="validate">
+                                <label for="phone">Phone Number</label>
+                                <span class="helper-text" data-error="Please enter your phone number"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
                                 <i class="material-icons prefix">mode_edit</i>
                                 <textarea class="materialize-textarea validate" id="queries" name="queries"></textarea>
                                 <label for="queries">Queries</label>
@@ -135,9 +143,10 @@
 
                         </div>
                         <div class="row center">
-                            <a class="btn-small waves-effect waves-light teal" id="submit" name="submit" type="submit"
-                                value="Submit">Submit</a>
-                            <a href="/" class="modal-close waves-effect waves-light red lighten-1 btn-small">Cancel</a>
+                            <a class="btn-small waves-effect waves-light teal" id="submit" type="submit"
+                                onclick="onMailSend()">Submit</a>
+                            <a href="contactus.html"
+                                class="modal-close waves-effect waves-light red lighten-1 btn-small">Cancel</a>
                         </div>
 
                     </form>
@@ -147,7 +156,6 @@
             </div>
 
         </div>
-        <br><br>
         <br><br>
     </div>
 
@@ -216,7 +224,19 @@
     <script src="js/init.js"></script>
     <script src="js/main.js">
     </script>
-
+    <script language="JavaScript">
+        function onMailSend() {
+            var name = document.getElementById("name").value;
+            var emailId = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+            var queries = document.getElementById("queries").value;
+            if (name === '' || emailId === '' || phone === '' || queries === '') {
+                alert('Please fill all details in the form');
+            } else {
+                window.location.href = "mailto:ssn.enterprises777@gmail.com?subject=SSN ENQUIRY EMAIL&body=Name: " + name + "%0DEmail: " + emailId + "%0DPhone: " + phone + "%0DQueries: " + queries;
+            }
+        }
+    </script>
 
 </body>
 

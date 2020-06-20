@@ -23,3 +23,13 @@ $('.movePrevCarousel').click(function (e) {
     e.stopPropagation();
     $('.carousel').carousel('prev');
 });
+
+$(".collapsible-header").hover(function () {
+    $(".collapsible-header").addClass("active");
+    $(".collapsible-body").css('display', 'block');
+});
+
+$(".collapsible-header").mouseout(function () {
+    $(".collapsible-header").removeClass("active");
+    $(".collapsible-body").css('display', 'none');
+});
