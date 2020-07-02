@@ -9,6 +9,7 @@ $(document).ready(function () {
     $('.sidenav').sidenav();
     $('.collapsible').collapsible();
     $('.parallax').parallax();
+    $('.fixed-action-btn').floatingActionButton();
 });
 // move next carousel
 $('.moveNextCarousel').click(function (e) {
